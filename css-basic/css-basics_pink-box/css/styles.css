@@ -12,6 +12,8 @@ body {
 div {
   font-family: cursive;
   padding: 8px;
+  height: 150px;
+  width: 150px;
 
   /* Set the height and the width of the box to 150px. */
 
