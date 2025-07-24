@@ -43,7 +43,9 @@
 
   💡 Select the animals by their class names and use the text-align property.
 */
-
+.giraffe:hover {
+  color: lightgreen;
+}
 /* 
   The animals want some color! 🎨
   When the mouse hovers over an animal, change the background color.
