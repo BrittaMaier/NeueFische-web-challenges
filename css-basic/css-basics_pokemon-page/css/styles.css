@@ -82,6 +82,10 @@ section {
   display: inline-block;
   /* Your solution */
 }
+.favourites h2 {
+  border-left-color: orange;
+  border-right-color: orange;
+}
 
 /* ------- List ------- */
 
