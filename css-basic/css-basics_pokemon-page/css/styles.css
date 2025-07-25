@@ -27,7 +27,7 @@ h2 {
   line-height: 1.2;
 }
 /* Your solution */
-h1 {
+.title {
   background-color: white;
   margin-top: 0;
   padding: 10px;
@@ -40,10 +40,6 @@ h1 {
 - Add padding of 10px
 - Center the text of the heading
 */
-
-.title {
-  /* Your solution */
-}
 
 /* ------- Sections ------- */
 
