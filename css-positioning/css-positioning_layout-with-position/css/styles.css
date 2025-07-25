@@ -63,6 +63,7 @@ body {
   background-color: #ebddfa;
   scroll-margin-top: 150px;
   border-radius: 5px;
+  position: relative;
 }
 
 .card__heading {
