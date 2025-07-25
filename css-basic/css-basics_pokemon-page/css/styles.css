@@ -72,6 +72,14 @@ section {
 */
 
 .subtitle {
+  border-left-style: solid;
+  border-left-width: 3px;
+  border-left-color: gold;
+  border-right-style: solid;
+  border-right-width: 3px;
+  border-right-color: gold;
+  padding: 0px 20px;
+  display: inline-block;
   /* Your solution */
 }
 
