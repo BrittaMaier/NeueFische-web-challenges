@@ -43,6 +43,8 @@ Make sure not to put your code into the comments, because then nothing will happ
 }
 
 .button3 {
+  font-family: Calibri;
+  font-size: 30px;
   /* Style me! You can test out changing the font, font size, ...*/
 }
 
