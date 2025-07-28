@@ -62,15 +62,16 @@ h1 {
 .box--one {
   background-color: lightblue;
 
-  width: 1em;
+  width: 50%;
   height: 100px;
 }
-
+/* I want my width to change to <strong>200px</strong> when the
+            viewport is wider than 599px, and to <strong>400px</strong> when the
+            viewport is wider than 1199px.*/
 .box--two {
-  background-color: lightgreen;
-
   width: 100px;
   height: 100px;
+  background-color: lightgreen;
 }
 
 .box--three {
@@ -93,4 +94,15 @@ h1 {
 
 .box--five img {
   width: 100%;
+}
+
+@media screen (min-width: 600px) {
+  .box--two {
+    width: 200px;
+  }
+}
+@media screen (min-width: 1200px) {
+  .box--two {
+    width: 400px;
+  }
 }
