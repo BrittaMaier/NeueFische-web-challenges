@@ -111,3 +111,8 @@ h1 {
     width: 0px;
   }
 }
+@media (prefers-color-scheme: dark) {
+  .box--four {
+    background-color: black;
+  }
+}
