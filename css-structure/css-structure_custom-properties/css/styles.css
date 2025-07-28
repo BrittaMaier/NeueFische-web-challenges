@@ -1,6 +1,4 @@
-*,
-*::before,
-*::after {
+@import "./global.css" *, *: : before, *: : after {
   box-sizing: border-box;
 }
 
@@ -12,12 +10,11 @@ body {
 
 header {
   background: rgb(131 54 255/ 45%);
-  
 }
 
 h1 {
   text-align: center;
-  color: white;
+  color: var(--text-color);
   line-height: 1.4;
   margin: 0;
   letter-spacing: 0.025em;
@@ -63,7 +60,7 @@ figure {
 }
 
 figcaption {
-  color: rgb(255 255 255);
+  color: var(--text-color);
 }
 
 nav {
@@ -78,7 +75,7 @@ a {
   padding: 8px;
   border-radius: 4px;
   background-color: hsl(14 100% 53%);
-  color: #fff;
+  color: var(--text-color);
 }
 
 a:hover,
