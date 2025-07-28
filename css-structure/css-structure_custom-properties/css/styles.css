@@ -1,6 +1,4 @@
-*,
-*::before,
-*::after {
+@import "./global.css" *, *: : before, *: : after {
   box-sizing: border-box;
 }
 
@@ -12,12 +10,11 @@ body {
 
 header {
   background: rgb(131 54 255/ 45%);
-  
 }
 
 h1 {
   text-align: center;
-  color: white;
+  color: var(--text-color);
   line-height: 1.4;
   margin: 0;
   letter-spacing: 0.025em;
@@ -30,7 +27,7 @@ h2 {
 }
 
 strong {
-  color: #ff4a11;
+  color: var(--background-color);
 }
 
 section {
@@ -58,12 +55,12 @@ figure {
   gap: 10px;
   margin: 0;
   padding: 10px;
-  background-color: #ff4a11ff;
+  background-color: var(--background-color);
   border-radius: 4px;
 }
 
 figcaption {
-  color: rgb(255 255 255);
+  color: var(--text-color);
 }
 
 nav {
@@ -77,8 +74,8 @@ a {
   font-size: smaller;
   padding: 8px;
   border-radius: 4px;
-  background-color: hsl(14 100% 53%);
-  color: #fff;
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
 
 a:hover,
@@ -88,7 +85,7 @@ a:focus-visible {
 }
 
 mark {
-  background-color: rgb(255 74 17);
+  background-color: var(--background-color);
   color: #ffffff;
   border-radius: 4px;
   letter-spacing: 0.025em;
@@ -96,5 +93,5 @@ mark {
 
 ::selection {
   background-color: #252629;
-  color: #ff4a11;
+  color: var(--background-color);
 }
