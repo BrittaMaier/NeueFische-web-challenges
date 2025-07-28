@@ -106,3 +106,8 @@ h1 {
     width: 400px;
   }
 }
+@media screen (orientation: landscape) {
+  .box--three {
+    width: 0px;
+  }
+}
