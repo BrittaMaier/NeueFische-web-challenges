@@ -17,14 +17,3 @@ body {
   font-family: system-ui, sans-serif;
   background: var(--body-bg);
 }
-.header {
-  position: sticky;
-  top: 0;
-  background: var(--header-bg);
-  color: var(--header-text);
-  padding: 20px;
-}
-
-.header__title {
-  margin: 0;
-}
