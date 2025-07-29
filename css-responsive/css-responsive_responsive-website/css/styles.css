@@ -242,6 +242,13 @@ CSS based on conditions such as viewport width, etc. */
 /* --- */
 /* Replace this comment with your media query. */
 /* --- */
+@media screen and (max-width: 899px) {
+  .product-card {
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
 
 /* Media Query Desktop */
 /* --- */
