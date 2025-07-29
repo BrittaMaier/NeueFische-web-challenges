@@ -249,6 +249,19 @@ CSS based on conditions such as viewport width, etc. */
     justify-content: center;
   }
 }
+@media screen and (min-width: 900px) {
+  .card-section {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .product-card {
+    width: 45%;
+  }
+  .intro-text {
+    width: 45%;
+  }
+}
 
 /* Media Query Desktop */
 /* --- */
