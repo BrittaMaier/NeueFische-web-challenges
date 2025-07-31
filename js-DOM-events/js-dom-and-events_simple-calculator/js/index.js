@@ -32,7 +32,11 @@ console.log(sum);
 const subtraction = addButton.addEventListener("click", () => {
   operand1 - operand2;
 });
-console.log(subtraction);
+console.log(multiplication);
+const multiplication = addButton.addEventListener("click", () => {
+  operand1 * operand2;
+});
+console.log(multiplication);
 // --v-- write your code here --v--
 
 // --^-- write your code here --^--
