@@ -37,6 +37,10 @@ const multiplication = addButton.addEventListener("click", () => {
   operand1 * operand2;
 });
 console.log(multiplication);
+const division = addButton.addEventListener("click", () => {
+  operand1 / operand2;
+});
+console.log(division);
 // --v-- write your code here --v--
 
 // --^-- write your code here --^--
