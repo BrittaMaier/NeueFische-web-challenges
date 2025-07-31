@@ -64,6 +64,11 @@ Hint: To allow `operand1` to be updated, you might need to change its declaratio
 Step 1: Select each button for updating `operand1` by its `data-js` attribute.
 Step 2: Add event listeners to update `operand1` based on the button clicked. Log the updated value to the console.
 */
+let increaseByOne = document.querySelector('[data-js="increase-by-one"]');
+let increasedByOne = increaseByOne.addEventListener("click", () => {
+  operand1++;
+});
+console.log(increasedByOne);
 
 // --v-- write your code here --v--
 
