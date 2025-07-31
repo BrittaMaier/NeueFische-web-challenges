@@ -28,6 +28,7 @@ For each operation (add, subtract, multiply, divide, exponent, and modulo):
 const sum = addButton.addEventListener("click", () => {
   operand1 + operand2;
 });
+console.log(sum);
 // --v-- write your code here --v--
 
 // --^-- write your code here --^--
