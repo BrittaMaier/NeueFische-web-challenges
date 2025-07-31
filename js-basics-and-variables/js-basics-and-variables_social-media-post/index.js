@@ -12,7 +12,7 @@ const title = "Stress";
 const textContent = "..sucks";
 let numberOfLikes = 2;
 const user = "Myself";
-let isReported = null;
+let isReported = true;
 
 // --v-- write your code here --v--
 
