@@ -27,6 +27,7 @@ console.log(numberOfLikes);
 console.log(user);
 console.log(isReported);
 numberOfLikes++;
+console.log(numberOfLikes);
 
 // --v-- write your code here --v--
 
