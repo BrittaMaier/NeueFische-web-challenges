@@ -86,12 +86,12 @@ let decreasedByFive = decreaseByFive.addEventListener("click", () => {
 console.log(decreasedByFive);
 let multiplyByTwo = document.querySelector('[data-js="multiply-by-two"]');
 let multipliedByTwo = multipliedByTwo.addEventListener("click", () => {
-  operand1 * 2;
+  operand1 = operand1 * 2;
 });
 console.log(multipliedByTwo);
 let divideByTwo = document.querySelector('[data-js="divide-by-two"]');
 let dividedByTwo = divideByTwo.addEventListener("click", () => {
-  operand1 / 2;
+  operand1 = operand1 / 2;
 });
 console.log(dividedByTwo);
 // --v-- write your code here --v--
