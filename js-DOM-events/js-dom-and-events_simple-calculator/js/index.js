@@ -29,6 +29,10 @@ const sum = addButton.addEventListener("click", () => {
   operand1 + operand2;
 });
 console.log(sum);
+const subtraction = addButton.addEventListener("click", () => {
+  operand1 - operand2;
+});
+console.log(subtraction);
 // --v-- write your code here --v--
 
 // --^-- write your code here --^--
