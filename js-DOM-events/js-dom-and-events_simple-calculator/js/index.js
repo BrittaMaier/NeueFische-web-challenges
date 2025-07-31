@@ -45,6 +45,10 @@ const exponential = addButton.addEventListener("click", () => {
   operand1 ** operand2;
 });
 console.log(exponential);
+const remainder = addButton.addEventListener("click", () => {
+  operand1 % operand2;
+});
+console.log(remainder);
 // --v-- write your code here --v--
 
 // --^-- write your code here --^--
