@@ -69,11 +69,16 @@ let increasedByOne = increaseByOne.addEventListener("click", () => {
   operand1++;
 });
 console.log(increasedByOne);
-let increaseByFive = document.querySelector('[data-js="increase-by-one"]');
+let increaseByFive = document.querySelector('[data-js="increase-by-five"]');
 let increasedByFive = increaseByOne.addEventListener("click", () => {
   operand1 = operand1 + 5;
 });
 console.log(increasedByFive);
+let decreaseByOne = document.querySelector('[data-js="decrease-by-one"]');
+let decreasedByOne = decreaseByOne.addEventListener("click", () => {
+  operand1--;
+});
+console.log(decreasedByOne);
 // --v-- write your code here --v--
 
 // --^-- write your code here --^--
