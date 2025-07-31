@@ -11,6 +11,7 @@ const subtractButton = document.querySelector('[data-js="subtract"]');
 const multiplyButton = document.querySelector('[data-js="multiply"]');
 const divideButton = document.querySelector('[data-js="divide"]');
 const exponentButton = document.querySelector('[data-js="exponent"]');
+const moduloButton = document.querySelector('[data-js="modulo"]');
 // --v-- write your code here --v--
 
 // --^-- write your code here --^--
