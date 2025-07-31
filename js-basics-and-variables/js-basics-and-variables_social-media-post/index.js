@@ -8,6 +8,11 @@ console.clear();
 	- the user who created the post
 	- a boolean called `isReported` to indicate whether the post has been reported
 */
+const title = "Stress";
+const textContent = "..sucks";
+let numberOfLikes = 2;
+const user = "Myself";
+let isReported = null;
 
 // --v-- write your code here --v--
 
