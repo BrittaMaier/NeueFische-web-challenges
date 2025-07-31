@@ -41,6 +41,10 @@ const division = addButton.addEventListener("click", () => {
   operand1 / operand2;
 });
 console.log(division);
+const exponential = addButton.addEventListener("click", () => {
+  operand1 ** operand2;
+});
+console.log(exponential);
 // --v-- write your code here --v--
 
 // --^-- write your code here --^--
