@@ -17,6 +17,7 @@ const hacking = "Happy hacking!";
 console.log(hacking);
 
 // 5. Which method is used to clear the console? Use it to tidy up the console.
+console.clear();
 
 // 6. Store the text 'This is an error!' in a variable 'error'.
 
