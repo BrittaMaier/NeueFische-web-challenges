@@ -6,7 +6,10 @@ const operand2 = 4;
 // ----- Mathematical Operations -----
 
 // Step 1: Use `document.querySelector` to select each button by its `data-js` attribute.
-
+const addButton = document.querySelector('[data-js="add"]');
+const subtractButton = document.querySelector('[data-js="subtract"]');
+const multiplyButton = document.querySelector('[data-js="multiply"]');
+const divideButton = document.querySelector('[data-js="divide"]');
 // --v-- write your code here --v--
 
 // --^-- write your code here --^--
