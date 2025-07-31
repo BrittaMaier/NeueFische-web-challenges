@@ -1,17 +1,17 @@
 console.clear();
 
-const operand1 = 12;
-const operand2 = 4;
+let operand1 = 12;
+let operand2 = 4;
 
 // ----- Mathematical Operations -----
 
 // Step 1: Use `document.querySelector` to select each button by its `data-js` attribute.
-const addButton = document.querySelector('[data-js="add"]');
-const subtractButton = document.querySelector('[data-js="subtract"]');
-const multiplyButton = document.querySelector('[data-js="multiply"]');
-const divideButton = document.querySelector('[data-js="divide"]');
-const exponentButton = document.querySelector('[data-js="exponent"]');
-const moduloButton = document.querySelector('[data-js="modulo"]');
+let addButton = document.querySelector('[data-js="add"]');
+let subtractButton = document.querySelector('[data-js="subtract"]');
+let multiplyButton = document.querySelector('[data-js="multiply"]');
+let divideButton = document.querySelector('[data-js="divide"]');
+let exponentButton = document.querySelector('[data-js="exponent"]');
+let moduloButton = document.querySelector('[data-js="modulo"]');
 // --v-- write your code here --v--
 
 // --^-- write your code here --^--
@@ -25,27 +25,27 @@ For each operation (add, subtract, multiply, divide, exponent, and modulo):
 3. Store the result in a variable.
 4. Log the result to the console.
 */
-const sum = addButton.addEventListener("click", () => {
+let sum = addButton.addEventListener("click", () => {
   operand1 + operand2;
 });
 console.log(sum);
-const subtraction = addButton.addEventListener("click", () => {
+let subtraction = addButton.addEventListener("click", () => {
   operand1 - operand2;
 });
 console.log(multiplication);
-const multiplication = addButton.addEventListener("click", () => {
+let multiplication = addButton.addEventListener("click", () => {
   operand1 * operand2;
 });
 console.log(multiplication);
-const division = addButton.addEventListener("click", () => {
+let division = addButton.addEventListener("click", () => {
   operand1 / operand2;
 });
 console.log(division);
-const exponential = addButton.addEventListener("click", () => {
+let exponential = addButton.addEventListener("click", () => {
   operand1 ** operand2;
 });
 console.log(exponential);
-const remainder = addButton.addEventListener("click", () => {
+let remainder = addButton.addEventListener("click", () => {
   operand1 % operand2;
 });
 console.log(remainder);
