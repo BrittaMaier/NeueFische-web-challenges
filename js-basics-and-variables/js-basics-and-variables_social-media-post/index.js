@@ -21,6 +21,11 @@ let isReported = null;
 /*
 2. Log all variables to the console. Then increase the number of likes by one and log the updated like count. Modify your code from step 1 if necessary.
 */
+console.log(title);
+console.log(textContent);
+console.log(numberOfLikes);
+console.log(user);
+console.log(isReported);
 
 // --v-- write your code here --v--
 
