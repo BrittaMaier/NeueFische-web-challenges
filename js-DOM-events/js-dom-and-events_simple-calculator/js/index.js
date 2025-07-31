@@ -69,7 +69,11 @@ let increasedByOne = increaseByOne.addEventListener("click", () => {
   operand1++;
 });
 console.log(increasedByOne);
-
+let increaseByFive = document.querySelector('[data-js="increase-by-one"]');
+let increasedByFive = increaseByOne.addEventListener("click", () => {
+  operand1 = operand1 + 5;
+});
+console.log(increasedByFive);
 // --v-- write your code here --v--
 
 // --^-- write your code here --^--
