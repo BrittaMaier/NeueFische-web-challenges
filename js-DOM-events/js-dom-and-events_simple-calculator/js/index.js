@@ -25,7 +25,9 @@ For each operation (add, subtract, multiply, divide, exponent, and modulo):
 3. Store the result in a variable.
 4. Log the result to the console.
 */
-
+const sum = addButton.addEventListener("click", () => {
+  operand1 + operand2;
+});
 // --v-- write your code here --v--
 
 // --^-- write your code here --^--
