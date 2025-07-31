@@ -11,8 +11,10 @@ const coding = "Happy coding!";
 console.log(coding);
 
 // 3. Store the sentence 'Happy hacking!' in a variable named 'hacking'.
+const hacking = "Happy hacking!";
 
 // 4. Display the variable 'hacking' as a message in the console.
+console.log(hacking);
 
 // 5. Which method is used to clear the console? Use it to tidy up the console.
 
