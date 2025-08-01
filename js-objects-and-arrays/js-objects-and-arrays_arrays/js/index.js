@@ -4,6 +4,7 @@ console.clear();
 // Modify the array `exampleArray` so that it contains a number and a string.
 
 const exampleArray = [true];
+exampleArray = [9, "blau"];
 
 // EXERCISE 2
 // Nest an array inside `nestedArray`. After completing this, `nestedArray` should contain an array as one of its elements.
