@@ -95,7 +95,7 @@ decreaseByFive.addEventListener("click", () => {
 });
 
 const multiplyByTwo = document.querySelector('[data-js="multiply-by-two"]');
-multipliedByTwo.addEventListener("click", () => {
+multiplyByTwo.addEventListener("click", () => {
   operand1 = operand1 * 2;
   console.log("Multiplied by Two:", operand1);
 });
