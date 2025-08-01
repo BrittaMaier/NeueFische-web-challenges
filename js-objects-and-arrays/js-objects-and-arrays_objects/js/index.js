@@ -27,7 +27,8 @@ const personToChange = {
   name: "Kim",
   age: 24,
 };
-
+const personToChange.name="Alex";
+const personToChange.age=24;
 // EXERCISE 4
 // Add the properties `age` with value "5" and `breed` with value "husky" to the `petPluto` object: `pet.newProperty = newValue`.
 
