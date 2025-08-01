@@ -34,9 +34,9 @@ if (numberOfHotdogs < 5) {
 // Part 4: Daytime
 const currentHour = 12;
 
-const statement = "";
+let statement = "";
 
-console.log(statement);
+console.log(statement=currentHour< 17 ? "Still need to learn..." : "Hello Coach!";);
 
 // Part 5: Greeting
 const userName = "Archibald";
