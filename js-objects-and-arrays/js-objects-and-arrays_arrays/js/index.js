@@ -10,7 +10,7 @@ exampleArray = [9, "blau"];
 // Nest an array inside `nestedArray`. After completing this, `nestedArray` should contain an array as one of its elements.
 
 const nestedArray = ["example", 10, true];
-
+nestedArray.push([0, 2]);
 // EXERCISE 3
 // Change the value of `firstNumber` to equal the first value in the `numbers` array using bracket notation.
 
