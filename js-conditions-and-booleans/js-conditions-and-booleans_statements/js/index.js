@@ -21,6 +21,15 @@ if (check === 0) {
 
 // Part 3: Hotdogs
 const numberOfHotdogs = 42;
+if (numberOfHotdogs < 5) {
+  console.log("2 euros per hotdog");
+} else if (5 <= numberOfHotdogs < 100) {
+  console.log("1.50 euros per hotdog");
+} else if (100 <= numberOfHotdogs < 1000000) {
+  console.log("1 euro per hotdog");
+} else {
+  console.log("0.10 euro per hotdog");
+}
 
 // Part 4: Daytime
 const currentHour = 12;
