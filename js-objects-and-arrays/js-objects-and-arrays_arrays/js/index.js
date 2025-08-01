@@ -4,7 +4,8 @@ console.clear();
 // Modify the array `exampleArray` so that it contains a number and a string.
 
 const exampleArray = [true];
-exampleArray = [9, "blau"];
+exampleArray[0] = 9;
+exampleArray.push("blau");
 
 // EXERCISE 2
 // Nest an array inside `nestedArray`. After completing this, `nestedArray` should contain an array as one of its elements.
@@ -34,7 +35,7 @@ const nestedNumber = nestedNumbers[1][2][0];
 // Use the `.push()` array method to add "rat" to the end of `petsWithPush`.
 
 const petsWithPush = ["dog", "cat", "rabbit"];
-petsWithPush.add("rat");
+petsWithPush.push("rat");
 
 // EXERCISE 7
 // Use the `.pop()` method to remove the last item from `fruitsWithPop`.
