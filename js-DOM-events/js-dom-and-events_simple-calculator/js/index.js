@@ -25,30 +25,30 @@ For each operation (add, subtract, multiply, divide, exponent, and modulo):
 3. Store the result in a variable.
 4. Log the result to the console.
 */
-const sum = addButton.addEventListener("click", () => {
-  operand1 + operand2;
+addButton.addEventListener("click", () => {
+  const sum = operand1 + operand2;
 });
-console.log(sum);
-const subtraction = addButton.addEventListener("click", () => {
-  operand1 - operand2;
+console.log("Sum:", sum);
+subtractButton.addEventListener("click", () => {
+  const subtraction = operand1 - operand2;
 });
-console.log(multiplication);
-const multiplication = addButton.addEventListener("click", () => {
-  operand1 * operand2;
+console.log("Subtraction:", subtraction);
+multiplyButton.addEventListener("click", () => {
+  const multiplication = operand1 * operand2;
 });
-console.log(multiplication);
-const division = addButton.addEventListener("click", () => {
-  operand1 / operand2;
+console.log("Multiplication:", multiplication);
+divideButton.addEventListener("click", () => {
+  const division = operand1 / operand2;
 });
-console.log(division);
-const exponential = addButton.addEventListener("click", () => {
-  operand1 ** operand2;
+console.log("Division:", division);
+exponentButton.addEventListener("click", () => {
+  const exponential = operand1 ** operand2;
 });
-console.log(exponential);
-const remainder = addButton.addEventListener("click", () => {
-  operand1 % operand2;
+console.log("Exponential:", exponential);
+moduloButton.addEventListener("click", () => {
+  const remainder = operand1 % operand2;
 });
-console.log(remainder);
+console.log("Modulo:", remainder);
 // --v-- write your code here --v--
 
 // --^-- write your code here --^--
@@ -65,35 +65,35 @@ Step 1: Select each button for updating `operand1` by its `data-js` attribute.
 Step 2: Add event listeners to update `operand1` based on the button clicked. Log the updated value to the console.
 */
 const increaseByOne = document.querySelector('[data-js="increase-by-one"]');
-const increasedByOne = increaseByOne.addEventListener("click", () => {
+increaseByOne.addEventListener("click", () => {
   operand1++;
 });
-console.log(increasedByOne);
+console.log("Increased by One:", operand1);
 const increaseByFive = document.querySelector('[data-js="increase-by-five"]');
-const increasedByFive = increaseByFive.addEventListener("click", () => {
+increaseByFive.addEventListener("click", () => {
   operand1 = operand1 + 5;
 });
-console.log(increasedByFive);
+console.log("Increased by Five:", operand1);
 const decreaseByOne = document.querySelector('[data-js="decrease-by-one"]');
-const decreasedByOne = decreaseByOne.addEventListener("click", () => {
+decreaseByOne.addEventListener("click", () => {
   operand1--;
 });
-console.log(decreasedByOne);
+console.log("Decreased by One:", operand1);
 const decreaseByFive = document.querySelector('[data-js="decrease-by-five"]');
-const decreasedByFive = decreaseByFive.addEventListener("click", () => {
+decreaseByFive.addEventListener("click", () => {
   operand1 = operand1 - 5;
 });
-console.log(decreasedByFive);
+console.log("Decreased by Five:", operand1);
 const multiplyByTwo = document.querySelector('[data-js="multiply-by-two"]');
-const multipliedByTwo = multipliedByTwo.addEventListener("click", () => {
+multipliedByTwo.addEventListener("click", () => {
   operand1 = operand1 * 2;
 });
-console.log(multipliedByTwo);
+console.log("Multiplied by Two:", operand1);
 const divideByTwo = document.querySelector('[data-js="divide-by-two"]');
-const dividedByTwo = divideByTwo.addEventListener("click", () => {
+divideByTwo.addEventListener("click", () => {
   operand1 = operand1 / 2;
 });
-console.log(dividedByTwo);
+console.log("Divided by Two:", operand1);
 // --v-- write your code here --v--
 
 // --^-- write your code here --^--
