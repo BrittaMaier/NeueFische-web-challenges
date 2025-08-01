@@ -22,25 +22,24 @@ if (check === 0) {
 // Part 3: Hotdogs
 const numberOfHotdogs = 42;
 if (numberOfHotdogs < 5) {
-    totalPrice=numberOfHotdogs*2;
-  console.log("You have to pay:",totalPrice);
+  totalPrice = numberOfHotdogs * 2;
+  console.log("You have to pay:", totalPrice);
 } else if (5 <= numberOfHotdogs < 100) {
-  totalPrice=numberOfHotdogs*1.5;
-  console.log("You have to pay:",totalPrice);
+  totalPrice = numberOfHotdogs * 1.5;
+  console.log("You have to pay:", totalPrice);
 } else if (100 <= numberOfHotdogs < 1000000) {
-  totalPrice=numberOfHotdogs*1;
-  console.log("You have to pay:",totalPrice);
+  totalPrice = numberOfHotdogs * 1;
+  console.log("You have to pay:", totalPrice);
 } else {
-  totalPrice=numberOfHotdogs*0.1;
-  console.log("You have to pay:",totalPrice);
+  totalPrice = numberOfHotdogs * 0.1;
+  console.log("You have to pay:", totalPrice);
 }
 
 // Part 4: Daytime
 const currentHour = 12;
 
-let statement = "";
-
-console.log(statement=currentHour< 17 ? "Still need to learn..." : "Hello Coach!";);
+const statement = currentHour < 17 ? "Still need to learn..." : "Hello Coach!";
+console.log(statement);
 
 // Part 5: Greeting
 const userName = "Archibald";
