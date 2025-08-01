@@ -70,7 +70,7 @@ const mothersNameOfSecondPerson = people[1].parents.mothersName;
 // EXERCISE 5
 // Set the variable `animalTypeOfLisasPet` to the type of animal that Lisa has as a pet.
 
-const animalTypeOfLisasPet = people[3].pet.name;
+const animalTypeOfLisasPet = people[3].pet.type;
 
 export {
   nameOfFirstPerson,
