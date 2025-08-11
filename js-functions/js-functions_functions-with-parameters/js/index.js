@@ -12,6 +12,7 @@ console.log("Exercise 1:");
 function logText() {
   console.log("This text does not appear. Why?");
 }
+/*I added the following line to call the function for it to be excecuted*/
 logText();
 console.log("-------------");
 console.log("Exercise 2:");
@@ -19,7 +20,7 @@ console.log("Exercise 2:");
 2: Look at the functions below. They are almost identical. Can you find a way to generalize them into a new function with an input parameter? 
    Replace the function calls below with your new function.
 */
-
+/* This is what was here before:
 function greetBob() {
   console.log("Welcome Bob, good to see you again!");
 }
@@ -35,7 +36,14 @@ function greetMary() {
 greetAlice();
 greetBob();
 greetMary();
-
+*/
+/*This is my update:*/
+function greet(name) {
+  console.log("Welcome " + name + ", good to see you again");
+}
+greet("Bob");
+greet("Alice");
+greet("Mary");
 // --v-- write your code here --v--
 
 function greet() {}
