@@ -19,12 +19,14 @@ printSquare(5);
    the circumference to the console. The function does not exist yet.
    The formula is: circumference = 2 * Pi * radius
 */
-
+function printCircumference(radiusCircle) {
+  let circumference;
+  circumference = 2 * Math.PI * radiusCircle;
+  console.log("Circumference: " + circumference);
+}
 // Uncomment the following function calls and implement the function `printCircumference`.
-
-// printCircumference(4);
-// printCircumference(6);
-
+printCircumference(3);
+printCircumference(6);
 /*
 3: Write a function that accepts the width and length of a rectangle
    and logs the following text to the console: "The area of the rectangle is ?".
