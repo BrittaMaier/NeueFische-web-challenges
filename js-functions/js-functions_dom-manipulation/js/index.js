@@ -13,8 +13,8 @@ We want to add functionality to the buttons on this page. When a button is click
 function removeAllColors() {
   box.classList.remove("red", "green", "blue", "gray");
 }
-function addColor() {
-  box.classList.add();
+function addColor(colorClass) {
+  box.classList.add(colorClass);
 }
 
 redButton.addEventListener("click", () => {
@@ -27,6 +27,8 @@ redButton.addEventListener("click", () => {
 });
 
 blueButton.addEventListener("click", () => {
+  removeAllColors();
+  addColor("blue");
   /*
   Use your functions to:
     - remove all classes
@@ -35,6 +37,8 @@ blueButton.addEventListener("click", () => {
 });
 
 greenButton.addEventListener("click", () => {
+  removeAllColors();
+  addColor("green");
   /*
   Use your functions to:
     - remove all classes
@@ -43,6 +47,8 @@ greenButton.addEventListener("click", () => {
 });
 
 grayButton.addEventListener("click", () => {
+  removeAllColors();
+  addColor("gray");
   /*
   Use your functions to:
     - remove all classes
