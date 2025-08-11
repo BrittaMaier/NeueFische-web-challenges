@@ -11,15 +11,15 @@ We want to add functionality to the buttons on this page. When a button is click
   3. Use the two functions in the event listeners for the buttons to apply the corresponding color to the box when a button is clicked.
 */
 function removeAllColors() {
-  box.classList.remove();
+  box.classList.remove("red", "green", "blue", "gray");
 }
-function addColor(color) {
-  let color;
-  box.classList.add(color);
+function addColor() {
+  box.classList.add();
 }
 
 redButton.addEventListener("click", () => {
-  /*
+  removeAllColors();
+  addColor("red"); /*
   Use your functions to:
     - remove all classes
     - then add the class name: "red"
