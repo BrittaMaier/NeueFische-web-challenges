@@ -12,7 +12,7 @@ console.log("Exercise 1:");
 function logText() {
   console.log("This text does not appear. Why?");
 }
-
+logText();
 console.log("-------------");
 console.log("Exercise 2:");
 /*
