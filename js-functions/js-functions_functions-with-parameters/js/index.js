@@ -37,16 +37,16 @@ greetAlice();
 greetBob();
 greetMary();
 */
+
+// --v-- write your code here --v--
+
 /*This is my update:*/
 function greet(name) {
-  console.log("Welcome " + name + ", good to see you again");
+  console.log("Welcome " + name + ", good to see you again!");
 }
 greet("Bob");
 greet("Alice");
 greet("Mary");
-// --v-- write your code here --v--
-
-function greet() {}
 
 // --^-- write your code here --^--
 
