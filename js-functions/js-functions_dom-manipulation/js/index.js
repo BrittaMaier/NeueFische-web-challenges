@@ -10,9 +10,16 @@ We want to add functionality to the buttons on this page. When a button is click
   2. Create a function `addColor` that takes a class name as a parameter and adds that class to the box.
   3. Use the two functions in the event listeners for the buttons to apply the corresponding color to the box when a button is clicked.
 */
+function removeAllColors() {
+  box.classList.remove("red", "green", "blue", "gray");
+}
+function addColor(colorClass) {
+  box.classList.add(colorClass);
+}
 
 redButton.addEventListener("click", () => {
-  /*
+  removeAllColors();
+  addColor("red"); /*
   Use your functions to:
     - remove all classes
     - then add the class name: "red"
@@ -20,6 +27,8 @@ redButton.addEventListener("click", () => {
 });
 
 blueButton.addEventListener("click", () => {
+  removeAllColors();
+  addColor("blue");
   /*
   Use your functions to:
     - remove all classes
@@ -28,6 +37,8 @@ blueButton.addEventListener("click", () => {
 });
 
 greenButton.addEventListener("click", () => {
+  removeAllColors();
+  addColor("green");
   /*
   Use your functions to:
     - remove all classes
@@ -36,6 +47,8 @@ greenButton.addEventListener("click", () => {
 });
 
 grayButton.addEventListener("click", () => {
+  removeAllColors();
+  addColor("gray");
   /*
   Use your functions to:
     - remove all classes
