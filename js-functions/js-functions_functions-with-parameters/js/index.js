@@ -1,7 +1,6 @@
 console.clear();
 
-console.log("-------------");
-console.log("Exercise 1:");
+logSeparator(1);
 /*
 1: The function below is not executed. Can you figure out why? Find the bug and fix it.
 */
@@ -14,8 +13,8 @@ function logText() {
 }
 /*I added the following line to call the function for it to be excecuted*/
 logText();
-console.log("-------------");
-console.log("Exercise 2:");
+
+logSeparator(2);
 /*
 2: Look at the functions below. They are almost identical. Can you find a way to generalize them into a new function with an input parameter? 
    Replace the function calls below with your new function.
@@ -50,8 +49,7 @@ greet("Mary");
 
 // --^-- write your code here --^--
 
-console.log("-------------");
-console.log("Exercise 3:");
+logSeparator(3);
 /*
 3: We log a small separation text for each subtask. This is repetitive code, so let’s write a function `logSeparator` that takes the number of the exercise as an input parameter and logs the corresponding separator.
    Then, use this function to replace the existing separator logs in this JavaScript file.
