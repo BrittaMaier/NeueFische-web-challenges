@@ -30,6 +30,16 @@ Then:
 */
 
 // --v-- write your code here --v--
+console.log(
+  "Title: " +
+    title +
+    "\n Author: " +
+    author +
+    "\n Rating: " +
+    rating +
+    "\n Sales: " +
+    sales
+);
 
 // --^-- write your code here --^--
 
