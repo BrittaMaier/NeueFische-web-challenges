@@ -2,7 +2,7 @@ console.clear();
 
 const form = document.querySelector('[data-js="form"]');
 
-form.addEventListener("click", (event) => {
+form.addEventListener("submit", (event) => {
   event.preventDefault();
   const formData = new FormData(event.targe);
   const data = Object.fromEntries(formData);
