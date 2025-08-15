@@ -26,7 +26,6 @@ for (const keyV in languages) {
   newOption.textContent = languages[keyV];
   select.append(newOption);
 }
-console.log(select);
 // --^-- write or modify code above this line --^--
 
 // Part 2: Creating a Navigation Bar
@@ -43,5 +42,14 @@ main.append(navElement);
 navElement.append(ul);
 
 // --v-- write or modify code below this line --v--
-
+for (const keyNav in nav) {
+  newLi = document.createElement("li");
+  newA = document.createElement("a");
+  newA.textContent = nav[keyNav];
+  for (const keyNavkey in nav[keyNav]) {
+    newA.href = nav[keyNav][keyNavkey];
+  }
+  newLi.append(newA);
+  ul.append(newLi);
+}
 // --^-- write or modify code above this line --^--
