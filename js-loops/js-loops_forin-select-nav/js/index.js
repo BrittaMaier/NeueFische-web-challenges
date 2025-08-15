@@ -42,14 +42,12 @@ main.append(navElement);
 navElement.append(ul);
 
 // --v-- write or modify code below this line --v--
-for (const keyNav in nav) {
-  newLi = document.createElement("li");
-  newA = document.createElement("a");
-  newA.textContent = nav[keyNav];
-  for (const keyNavkey in nav[keyNav]) {
-    newA.href = nav[keyNav][keyNavkey];
-  }
-  newLi.append(newA);
-  ul.append(newLi);
+for (const navKey in nav) {
+  let newLi = document.createElement("li");
+  let newA = document.createElement("a");
+  newA.setAttribute("href", nav[navKey].href);
+  newA.textContent = nav[navKey];
+  newLi.textContent=newA;
+  ul.append(newLi);*/
 }
 // --^-- write or modify code above this line --^--
