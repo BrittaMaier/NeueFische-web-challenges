@@ -6,11 +6,18 @@ import { employees } from "../utils/db.js";
 // Check the browser preview and conduct some tests to ensure it works correctly.
 
 function findByLastName(employees, lastName) {
-  return null;
-
-  // Exercise 2:
-  // The same as above, but now you are searching by the 'id'.
+  const personWithCertainLastName = employees.find(
+    (person) => person.lastName === lastName
+  );
+  console.log(personWithCertainLastName);
+  return personWithCertainLastName;
 }
+
+//return ...;
+
+// Exercise 2:
+// The same as above, but now you are searching by the 'id'.
+
 function findById(employees, id) {
   return null;
 }
