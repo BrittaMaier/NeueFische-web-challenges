@@ -1,16 +1,8 @@
-import { getRandomColor } from "./utils/randomColor.js";
+import getRandomColor from "./utils/randomColor.js";
+import Circle from "./components/Circle/Circle.js";
 console.clear();
 
 const root = document.getElementById("root");
-function Circle() {
-  const circle = document.createElement("div");
-  circle.classList.add("circle");
-  circle.addEventListener("click", () => {
-    const randomColor = getRandomColor();
-    circle.style.backgroundColor = randomColor;
-  });
-  return circle;
-}
 const circleElement = Circle();
 
 const square = document.createElement("div");
