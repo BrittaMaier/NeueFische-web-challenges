@@ -23,11 +23,30 @@ const cards = [
     tags: ["js", "next", "advanced"],
   },
 ];
+/*Version to check:
+const lowerCaseAnswers{
+  const newAnswer = card.answer.toLowerCase();
+  console.log("New Answer: " + newAnswer);
+  return newAnswer;
+});*/
+const lowerCaseAnswers = cards.map((card) => card.answer.toLowerCase()); // ['as often as you like.', ...]
+console.log(lowerCaseAnswers);
+/*Version to check:
+const questionsAndAnswersTogether = cards.map((card) => {
+  const questionAndAnswer = card.question + " - " + card.answer;
+  console.log("Question and Answer together: ", questionAndAnswer);
+  return questionAndAnswer;
+}); */
+const questionsAndAnswersTogether = cards.map(
+  (card) => card.question + " - " + card.answer
+);
+console.log(questionsAndAnswersTogether);
+// ["How often can I use <header>? - As often as you like.", ...]
 
-const lowerCaseAnswers = null; // ['as often as you like.', ...]
-
-const questionsAndAnswersTogether = null; // ["How often can I use <header>? - As often as you like.", ...]
-
-const questionAndAnswer = null; // [{ question: 'How often can I use <header>?', answer: 'As often as you like.'}, {...}]
+const questionAndAnswer = cards.map(
+  (card) => `question: '${card.question}', answer: '${card.answer}'`
+);
+console.log("QuestionAndAnswer: " + questionAndAnswer);
+// [{ question: 'How often can I use <header>?', answer: 'As often as you like.'}, {...}]
 
 export { lowerCaseAnswers, questionsAndAnswersTogether, questionAndAnswer };
