@@ -1,3 +1,4 @@
+import Header from "./components/Header/Header.js";
 const cards = [
   {
     question:
@@ -22,15 +23,7 @@ const cards = [
   },
 ];
 
-function Header() {
-  const header = document.createElement("header");
-  header.classList.add("header");
-  header.innerHTML = /* html */ `
-	  <h1 class="header__title">Quiz-App</h1>
-	`;
-
-  return header;
-}
+const headerElement = Header();
 
 function handleFormSubmit(event) {
   event.preventDefault();
@@ -200,7 +193,7 @@ function CardList() {
 function App() {
   const app = document.createElement("main");
   app.classList.add("app");
-  app.append(Header(), Form(), CardList());
+  app.append(headerElement, Form(), CardList());
 
   return app;
 }
