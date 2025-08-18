@@ -1,3 +1,5 @@
+import Form from "../Form/Form";
+Form();
 export default function Card(props) {
   const card = document.createElement("article");
   card.classList.add("card");
