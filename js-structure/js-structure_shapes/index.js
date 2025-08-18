@@ -2,13 +2,16 @@ import { getRandomColor } from "./utils/randomColor.js";
 console.clear();
 
 const root = document.getElementById("root");
-
-const circle = document.createElement("div");
-circle.classList.add("circle");
-circle.addEventListener("click", () => {
-  const randomColor = getRandomColor();
-  circle.style.backgroundColor = randomColor;
-});
+function Circle() {
+  const circle = document.createElement("div");
+  circle.classList.add("circle");
+  circle.addEventListener("click", () => {
+    const randomColor = getRandomColor();
+    circle.style.backgroundColor = randomColor;
+  });
+  return circle;
+}
+const circleElement = Circle();
 
 const square = document.createElement("div");
 square.classList.add("square");
@@ -24,4 +27,4 @@ pentagon.addEventListener("click", () => {
   pentagon.style.backgroundColor = randomColor;
 });
 
-root.append(circle, square, pentagon);
+root.append(circleElement, square, pentagon);
