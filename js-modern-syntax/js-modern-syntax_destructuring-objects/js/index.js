@@ -25,7 +25,8 @@ Use destructuring to extract the following:
 */
 
 const user = { name: "John", years: 30 };
-
+export const { name, years: age, isAdmin = false } = user;
+//console.log(isAdmin);
 /*
 EXERCISE 3
 Extract properties from the dog object and
