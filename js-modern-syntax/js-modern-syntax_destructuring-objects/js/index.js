@@ -61,15 +61,28 @@ Refactor the following function to use destructuring assignment for the
 three variables `name`, `country` and `numPeople`.
 Hint: You may need to rename one property during destructuring.
 */
-
+/*Start:
 export function logInfo(city) {
   const name = city.name;
   const country = city.country;
   const numPeople = city.population;
 
   return `${name} is in ${country} and has ${numPeople} inhabitants in it.`;
-}
+*/
 
+/*First attempt:
+export function logInfo(city) {
+  //const name = city.name;
+  //const country = city.country;
+  //const numPeople = city.population;
+  const { name, country, population: numPeople } = city;
+
+  return `${name} is in ${country} and has ${numPeople} inhabitants in it.`;
+}*/
+/*Second attempt:*/
+export function logInfo({ name, country, population: numPeople }) {
+  return `${name} is in ${country} and has ${numPeople} inhabitants in it.`;
+}
 // Usage example:
 console.log(
   logInfo({ name: "Marseille", country: "France", population: 861635 })
