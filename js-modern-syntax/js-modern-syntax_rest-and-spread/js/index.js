@@ -61,3 +61,4 @@ c) Remember to export `allFruits`.
 
 const fruits = ["apple", "banana", "orange", "papaya"];
 const anotherFruit = "cherry";
+export const allFruits = [...anotherFruit, ...fruits];
