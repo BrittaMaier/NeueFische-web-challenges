@@ -38,6 +38,8 @@ const dog = {
   breed: "husky",
   age: 5,
 };
+export const { name: dogName, breed: dogBreed, age: dogAge } = dog;
+//console.log(dogAge);
 
 /*
 EXERCISE 4
