@@ -11,7 +11,7 @@ const company = {
   course: "Web Development",
   location: "Hamburg",
 };
-
+export const { course } = company;
 // Example: export const { value1 } = myObject;
 
 /*
