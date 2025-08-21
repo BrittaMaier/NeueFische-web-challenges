@@ -35,7 +35,7 @@ c) Make sure you understand what the rest syntax does here.
 d) Note that the optional chaining `?.` is used to prevent an error from occuring.
 */
 
-function add(allNumbers) {
+function add(...allNumbers) {
   return allNumbers.reduce?.((a, b) => a + b);
 }
 
@@ -49,7 +49,7 @@ c) Make sure you understand what the spread syntax does here.
 */
 
 const numbers = [3, 2, 1];
-export const result = add(numbers);
+export const result = add(...numbers);
 
 /*
 EXERCISE 5
