@@ -3,7 +3,8 @@ Now that you've practiced destructuring, default parameters, and the spread oper
 try reversing the challenge by rewriting this code without using these modern features.
 */
 
-export const getNameAndCountry = ({ name, country }) => [name, country];
+//export const getNameAndCountry = ({ name, country }) => [name, country];
+export const getNameAndCountry = (city2) => [city2.name, city2.country];
 
 export const getRelocatedCity = (
   city1,
@@ -15,3 +16,5 @@ export const getRelocatedCity = (
     country,
   };
 };
+
+console.log(getRelocatedCity());
