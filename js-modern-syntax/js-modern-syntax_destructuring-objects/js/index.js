@@ -52,6 +52,8 @@ const person = {
   age: 24,
   firstName: "Alex",
 };
+export const { lastName: personLastName, ...moreInformation } = person;
+//console.log("Rest: ", moreInformation);
 
 /*
 EXERCISE 5
