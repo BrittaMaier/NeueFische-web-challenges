@@ -14,7 +14,7 @@ const person = {
   email: "jane@doe.com",
   phone: "12345",
 };
-export const { name, ...contact } = person;
+export const { age, ...contact } = person;
 
 // Example: export const { value 1 } = myObject;
 
@@ -25,6 +25,7 @@ all other items should go into a variable called `restOfList`.
 */
 
 const list = ["one", "two", "three", "four", "five"];
+export const [first, second, ...restOfList] = list;
 
 /*
 EXERCISE 3
