@@ -7,7 +7,7 @@ Make sure to export your variable as shown in the example below to make the test
 */
 
 const item = ["Egg", 0.25, 12];
-
+export const [name, price, quantity] = item;
 // Example: export const [ value1, value2 ] = array;
 
 /*
