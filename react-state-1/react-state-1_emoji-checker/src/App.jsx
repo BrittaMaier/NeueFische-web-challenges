@@ -1,15 +1,13 @@
 import "./styles.css";
+import { useState } from "react";
 
 export default function App() {
-  let code = "?";
-
   const validCode = "🐡🐠🐋";
-
+  const [code, setCode] = useState("");
   function handleClick(emoji) {
-    console.log(emoji);
-    console.log(code);
+    setCode(code + emoji);
   }
-
+  console.log("Code:", code);
   return (
     <div className="container">
       <div className="button-container">
@@ -48,7 +46,7 @@ export default function App() {
       <button
         type="button"
         onClick={() => {
-          console.log("Reset Code!");
+          setCode("");
         }}
       >
         Reset
