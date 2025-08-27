@@ -54,7 +54,7 @@ function sumNumbers(numbers) {
   }
   return sum;
 }
-console.log(sumNumbers(numbers));
+//console.log(sumNumbers(numbers));
 // Calculate the average length of the words
 
 const words2 = [
@@ -71,9 +71,23 @@ const words2 = [
 ];
 
 function averageWordLength(words) {
-  // TODO:
+  // TODO: Return the average lenght of string elements of an input array
+  /*
+  1) Create changeable variable storing the sum of the element lengths
+  2) use loop to go through input array and include each element after another
+  3) Update sum by adding length of current element
+  4) after loop is finished divide sum by array length (meaning the number of elements in the array)
+  5) store this in a variable called average
+  6) return average variable
+  */
+  let sum = 0;
+  for (let i = 0; i < words.length; i++) {
+    sum += words[i].length;
+  }
+  const average = sum / words.length;
+  return average;
 }
-
+//console.log(averageWordLength(words2));
 // Unique arrays - return an array without duplicates
 
 const words3 = [
