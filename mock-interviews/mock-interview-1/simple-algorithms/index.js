@@ -11,24 +11,50 @@ function maxOfTwoNumbers(num1, num2) {
   }
   return num2;
 }
-console.log(maxOfTwoNumbers(4, 2));
+//console.log(maxOfTwoNumbers(4, 2));
 
 // Find the longest word
 
 const words = ["Jaws", "Up", "Alien", "Gravity", "Inception", "Psycho"];
 
 function findLongestWord(words) {
-  // TODO:
+  // TODO: Return longest word
+  /*
+  1) create changeable variable longest with initial value of an empty string to store longest word
+  2) Use for loop to check each element of an array by using a variable with an initial value of 0 representing the array index
+  3) Use if to update longest in the case that the word of the index we are checking is longer than the one stored in longest
+  4) return longest after loop is finished
+   */
+  let longest = "";
+  for (let i = 0; i < words.length; i++) {
+    if (words[i].length > longest.length) {
+      longest = words[i];
+    }
+  }
+  return longest;
 }
+//console.log(findLongestWord(words));
 
 // Calculate the sum
 
 const numbers = [6, 12, 1, 18, 13, 16, 2, 1, 8, 10];
 
 function sumNumbers(numbers) {
-  // TODO:
+  // TODO:Return sum
+  /*
+  1) it seems that the input will always be an array
+  2) we need to create a changeable variable called sum that
+     stores the sum of the elements of the input array and is returned when sumNumbers is called
+  3) as we want to address each element of the input array after another we need a loop suitable for
+     arrays, e.g. for and a variable referring to the index
+  4) We then should add to the sum variable each element (update sum) and return sum after loop is finished  */
+  let sum = 0;
+  for (let i = 0; i < numbers.length; i++) {
+    sum = sum + numbers[i];
+  }
+  return sum;
 }
-
+console.log(sumNumbers(numbers));
 // Calculate the average length of the words
 
 const words2 = [
