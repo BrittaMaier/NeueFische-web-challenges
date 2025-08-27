@@ -84,6 +84,9 @@ function averageWordLength(words) {
   for (let i = 0; i < words.length; i++) {
     sum += words[i].length;
   }
+  if (words.length === 0) {
+    return console.log("Input Array is empty!");
+  }
   const average = sum / words.length;
   return average;
 }
