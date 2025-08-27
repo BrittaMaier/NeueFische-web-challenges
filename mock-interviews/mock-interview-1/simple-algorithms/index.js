@@ -26,6 +26,10 @@ function findLongestWord(words) {
   4) return longest after loop is finished
    */
   let longest = "";
+  if (words.length === 0) {
+    console.log("Input Array is empty!");
+    return null;
+  }
   for (let i = 0; i < words.length; i++) {
     if (words[i].length > longest.length) {
       longest = words[i];
@@ -69,7 +73,7 @@ const words2 = [
   "vortex",
   "mystique",
 ];
-const empty = [];
+//const empty = [];
 
 function averageWordLength(words) {
   // TODO: Return the average lenght of string elements of an input array
@@ -92,7 +96,8 @@ function averageWordLength(words) {
   const average = sum / words.length;
   return average;
 }
-console.log(averageWordLength(empty));
+//console.log(averageWordLength(empty));
+
 // Unique arrays - return an array without duplicates
 
 const words3 = [
@@ -110,7 +115,16 @@ const words3 = [
 ];
 
 function uniquifyArray(words) {
-  // TODO:
+  // TODO: Return an array with words from the input array including every unique word only once
+  /*
+  - Create changeable variable uniqueArray initially referring to an empty array
+  - Go through input array one element at a time
+  - Update uniqueArray by adding current element to uniqueArray using append property of uniqueArray if it's not included in it
+    already (for this check if elements in uniqueArray equal current element)(could be include property but I am not sure, so I try by adding another loop first)
+  - return unique array after loop ended
+   */
+  let uniqueArray = [];
+  for (let i = 0; i < words.length; i++) {}
 }
 
 // Find elements
