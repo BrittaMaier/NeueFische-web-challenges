@@ -50,7 +50,7 @@ function sumNumbers(numbers) {
   4) We then should add to the sum variable each element (update sum) and return sum after loop is finished  */
   let sum = 0;
   for (let i = 0; i < numbers.length; i++) {
-    sum = sum + numbers[i];
+    sum += numbers[i];
   }
   return sum;
 }
