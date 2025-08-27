@@ -394,6 +394,33 @@ function howManyTimes(haystack, needle) {
 Task: A generic sum function 
       - for strings use the length of the string, for booleans use 1 and 0
 */
+// TODO:Return sum created by adding elements of an input array using length property for strings and numbers
+//      and 1 for true and 0 for false for boolean values.
+/*
+  A) Define Requirements:
+     - What we already have: 
+        - example of an array the function should receive as as an input/argument when calling the function:
+          - variable mixedArray assigned to an array including strings/words, numbers and booleans as elements
+        - function declaration of sum function with one (placeholder) parameter (array)
+          and empty function body, array refers to an array function will receive as an input/argument when calling it
+    - Input: An array of words, booleans and/or numbers is passed to function mixedArray() as an argument when it's called
+    - Function Body Goal: Add elements of an input array using
+                          - value if elements are numbers
+                          - length property if elements are strings/words
+                          - 0/1 if elements are booleans
+                          and return their sum
+    - Output (desired return): Return sum for input array
+
+
+  B) Approach:
+    - Define changeable sum variable with initial value of 0
+    - use for loop to address elements of input array one element at a time
+    - check which data type current element belongs to
+       - add value if current element is a number
+       - add length if current element is a string
+       - add 0/1 if current element is a boolean
+    - return sum variable after loop has ended
+   */
 const mixedArray = [
   "apple",
   "banana",
@@ -406,10 +433,46 @@ const mixedArray = [
   true,
   false,
 ];
+/*First approach: 
+- Define changeable variable sum with initial value of null
+- Define changeable variable check with initial value of 1
+- use if to check if input array is empty, or includes undefined or null
+  --> if yes return null
+- else: Use for loop to go through input array one element at a time
+        - Check if current element is undefined or null
+          --> if yes console.log and return undefined or null
+          --> else: add element value to check variable with initial value of 1
+              --> if check variable is NaN after that, current element is a boolean
+                  --> add current element to sum variable using 0 for false and 1 for true
+              --> if check variable is string after that with check variable being equal to `1${current element}`,
+                  current element is a string
+                  --> add current element to sum using the length property of the current element
+        - return sum variable after loop has ended
+*/
 
 function sum(array) {
-  // TODO:
+  // TODO:Return sum of array elements
+  let sum = 0;
+  let test = 1;
+  if (array.length === 0 || array.includes(undefined) || array.includes(null)) {
+    console.log("Array is empty or contains null or undefined as elements");
+    return null;
+  }
+  for (let i = 0; i < array.length; i++) {
+    test += array[i];
+    if (test === NaN) {
+      if (array[i] === true) {
+        sum++;
+      }
+    } else if (test === `1${array[i]}`) {
+      sum += array[i].length;
+    } else {
+      sum += array[i];
+    }
+  }
+  return sum;
 }
+console.log(sum(mixedArray));
 
 /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  Bonus 2 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 Task: Write a function that calculates the greatest product of four 
