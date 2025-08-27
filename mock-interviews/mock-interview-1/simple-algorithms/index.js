@@ -141,7 +141,7 @@ function uniquifyArray(words) {
   let uniqueArray = [];
   if (words.length === 0) {
     console.log("Input array is empty!");
-    return null;
+    return uniqueArray;
   }
   for (let i = 0; i < words.length; i++) {
     if (!uniqueArray.includes(words[i])) {
