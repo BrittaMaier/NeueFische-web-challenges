@@ -1,4 +1,6 @@
-// Find the maximum
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Exercise 1<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Task: Find the maximum
+*/
 function maxOfTwoNumbers(num1, num2) {
   // TODO:  return biggest out of two numbers
   /*
@@ -13,7 +15,9 @@ function maxOfTwoNumbers(num1, num2) {
 }
 //console.log(maxOfTwoNumbers(4, 2));
 
-// Find the longest word
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Exercise 2<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Task: Find the longest word
+*/
 
 const words = ["Jaws", "Up", "Alien", "Gravity", "Inception", "Psycho"];
 
@@ -39,7 +43,9 @@ function findLongestWord(words) {
 }
 //console.log(findLongestWord(words));
 
-// Calculate the sum
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Exercise 3<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Task: Calculate the sum
+*/
 
 const numbers = [6, 12, 1, 18, 13, 16, 2, 1, 8, 10];
 
@@ -59,7 +65,9 @@ function sumNumbers(numbers) {
   return sum;
 }
 //console.log(sumNumbers(numbers));
-// Calculate the average length of the words
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Exercise 4<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Task: Calculate the average length of the words*/
 
 const words2 = [
   "eclipse",
@@ -98,7 +106,8 @@ function averageWordLength(words) {
 }
 //console.log(averageWordLength(empty));
 
-// Unique arrays - return an array without duplicates
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Exercise 5<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Task: Unique arrays - return an array without duplicates*/
 
 const words3 = [
   "crab",
@@ -118,9 +127,15 @@ function uniquifyArray(words) {
   // TODO: Return an array with words from the input array including every unique word only once
   /*
   - Create changeable variable uniqueArray initially referring to an empty array
+  - use if to address the case of an empty array as the input and return null for this case
   - Go through input array one element at a time
-  - Update uniqueArray by adding current element to uniqueArray using push method of uniqueArray if it's not included in it
-    already (for this check if elements in uniqueArray equal current element)(could be include property but I am not sure, so I try by adding another loop first)
+    -->use for loop with index variable starting from 0, with condition of it being smaller than array length and increasing by one in the end
+  - if current element is not included in uniqueArray already ...
+    -->for this check if elements in uniqueArray equal current element using if
+       Can be done using an additional loop or the array method includes() (had to look it up)
+  - ...update uniqueArray by adding current element to uniqueArray 
+    -->can be done using push array method (had to look it up) or by updating uniqueArray by defining new element
+       by setting the element of uniqueArray with index uniqueArray.length (adds one position/index in the end of uniqueArray) to the current element
   - return unique array after loop ended
    */
   let uniqueArray = [];
@@ -136,8 +151,45 @@ function uniquifyArray(words) {
   return uniqueArray;
 }
 //console.log(uniquifyArray(words3));
+/*Alternative without using push and includes method given by Ecosia Chat AI:
+function uniquifyArray(words) {
+  let uniqueArray = [];
 
-// Find elements
+  if (words.length === 0) {
+    console.log("Input array is empty!");
+    return null;
+  }
+  
+  for (let i = 0; i < words.length; i++) {
+    let isDuplicate = false; // to check for duplicates
+    
+    // Check if the current word is already in uniqueArray
+    for (let j = 0; j < uniqueArray.length; j++) {
+      if (words[i] === uniqueArray[j]) {
+        isDuplicate = true; // Set flag to true if a duplicate is found
+        break; // Exit the inner loop since we found a duplicate
+      }
+    }
+    
+    // If it's not a duplicate, add it to uniqueArray
+    if (!isDuplicate) {
+      uniqueArray[uniqueArray.length] = words[i]; // Manually add the element
+    }
+  }
+  
+  return uniqueArray;
+}
+
+
+instead of break, this can be done:
+for (let j = 0; j < uniqueArray.length; j++) {
+      isDuplicate = isDuplicate || (words[i] === uniqueArray[j]);
+    }
+*/
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Exercise 6<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Task: Find elements*/
+
 const wordsFind = [
   "machine",
   "subset",
@@ -173,8 +225,11 @@ function howManyTimes(haystack, needle) {
   // TODO:
 }
 
-// Bonus: A generic sum function
-// for strings use the length of the string, for booleans use 1 and 0
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>   Bonus  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  Bonus 1 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Task: A generic sum function 
+      - for strings use the length of the string, for booleans use 1 and 0
+*/
 const mixedArray = [
   "apple",
   "banana",
@@ -192,8 +247,10 @@ function sum(array) {
   // TODO:
 }
 
-// Bonus: Write a function that calculates the greatest product of four
-// numbers that is either horizontally or vertically in the array
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  Bonus 2 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Task: Write a function that calculates the greatest product of four 
+      - numbers that is either horizontally or vertically in the array
+*/
 
 const matrix = [
   [8, 2, 22, 97, 38, 15, 0, 40, 0, 75, 4, 5, 7, 78, 52, 12, 50, 77, 91, 8],
