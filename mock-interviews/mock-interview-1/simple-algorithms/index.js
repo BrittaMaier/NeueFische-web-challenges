@@ -69,6 +69,7 @@ const words2 = [
   "vortex",
   "mystique",
 ];
+const empty = [];
 
 function averageWordLength(words) {
   // TODO: Return the average lenght of string elements of an input array
@@ -85,12 +86,13 @@ function averageWordLength(words) {
     sum += words[i].length;
   }
   if (words.length === 0) {
-    return console.log("Input Array is empty!");
+    console.log("Input Array is empty!");
+    return null;
   }
   const average = sum / words.length;
   return average;
 }
-//console.log(averageWordLength(words2));
+console.log(averageWordLength(empty));
 // Unique arrays - return an array without duplicates
 
 const words3 = [
