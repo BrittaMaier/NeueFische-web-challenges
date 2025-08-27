@@ -189,7 +189,22 @@ for (let j = 0; j < uniqueArray.length; j++) {
 
 /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Exercise 6<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 Task: Find elements*/
-// TODO:Return boolean result of comparison of array elements and arguments passed in function call
+
+const wordsFind = [
+  "machine",
+  "subset",
+  "trouble",
+  "starting",
+  "matter",
+  "eating",
+  "truth",
+  "disobedience",
+];
+/* For my first two Approaches I wrongfully assumed that
+ we should check if two words are included in the given 
+ array and didn't get that the array should be the haystack argument
+ and the needle should be the word we want to find in the array...
+ // TODO:Return boolean result of comparison of array elements and arguments passed in function call
 /*
   A) Define Requirements:
      - What we already have: 
@@ -214,18 +229,7 @@ Task: Find elements*/
     - either true for the case that both arguments are included (both conditions have to be met) or if one of them is include (one condition or the other has to be met)
     Second:
     - use includes to check if arguments are included as elements in exemplary array
-   */
 
-const wordsFind = [
-  "machine",
-  "subset",
-  "trouble",
-  "starting",
-  "matter",
-  "eating",
-  "truth",
-  "disobedience",
-];
 //First Approach:
 function doesWordExist(haystack, needle) {
   let Included = [0, 0];
@@ -258,6 +262,79 @@ function doesWordExist(haystack, needle) {
 }
 doesWordExist("starting", "needle");
 
+//Second Approach:
+function doesWordExist(haystack, needle) {
+  let Included = [0, 0];
+  if (wordsFind.length === 0) {
+    console.log("Input Array is empty");
+    return null;
+  }
+  if (haystack === undefined || needle === undefined) {
+    console.log("Argument(s) not defined");
+    return undefined;
+  }
+  if (wordsFind.includes(haystack)) {
+    Included[0] = 1;
+  }
+  if (wordsFind.includes(needle)) {
+    Included[1] = 1;
+  }
+  if (Included[0] === 1 && Included[1] === 1) {
+    console.log("Both words are included");
+  } else if (Included[0] === 1 && Included[1] === 0) {
+    console.log(`Only ${haystack} is included`);
+  } else if (Included[0] === 0 && Included[1] === 1) {
+    console.log(`Only ${needle} is included`);
+  } else {
+    console.log("None of the words are included");
+  }
+}
+// TODO:Return boolean result of comparison of array elements and arguments passed in function call
+
+doesWordExist("starting", "needle");
+*/
+
+//Third Approach:
+// TODO:Return boolean result of comparison of array elements and arguments passed in function call
+/*
+  A) Define Requirements:
+     - What we already have: 
+        - example of an array the function should receive as as an input/argument when calling the function:
+          - variable wordsFind assigned to an array including strings/words as elements
+        - function declaration of doesWordExist function with two (placeholder) parameters (haystack and needle)
+          and empty function body, haystack refers to array we want to search a word (needle) in
+    - Input: An array of words and a word are passed to function doesWordExist() as arguments when it's called
+    - Function Body Goal: Check if input word (referred to as needle placeholder parameter inside of the function) 
+                          is included in input array of words (referred to as haystack with wordsFind being an example)
+    - Output (desired return): Return true if input word is included in input array and false if not
+
+
+  B) Approach:
+    First:
+    - Go through input Array one element at a time and compare current element to input word
+      -->using loop
+    - Under the condition that it is included in the array (meaning that current element for some i equals input word) return true after loop has ended
+    - for all other cases return false
+      --> use if
+    Second:
+    - use includes to check if input word is included as element in input array
+   */
+function doesWordExist(haystack, needle) {
+  let included = null;
+  if (haystack.length === 0) {
+    console.log("Input Array is empty!");
+    return null;
+  }
+  if (haystack === undefined || needle === undefined) {
+    console.log("Argument(s) is/are undefined");
+    return undefined;
+  }
+  if (haystack.includes(needle)) {
+    return true;
+  }
+  return false;
+}
+//console.log(doesWordExist(wordsFind, "machine"));
 // Count repetition
 
 const wordsCount = [
