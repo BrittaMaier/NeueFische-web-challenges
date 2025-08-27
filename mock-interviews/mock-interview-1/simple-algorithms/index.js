@@ -335,8 +335,32 @@ function doesWordExist(haystack, needle) {
   return false;
 }
 //console.log(doesWordExist(wordsFind, "machine"));
-// Count repetition
 
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Exercise 7<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Task: Count repetition */
+// TODO:Return boolean result of comparison of array elements and arguments passed in function call
+/*
+  A) Define Requirements:
+     - What we already have: 
+        - example of an array the function should receive as as an input/argument when calling the function:
+          - variable wordsCount assigned to an array including strings/words as elements
+        - function declaration of howManyTimes function with two (placeholder) parameters (haystack and needle)
+          and empty function body, haystack refers to array we want to search a word (needle) and if it's included count how many
+          times it's there
+    - Input: An array of words and a word are passed to function howManyTimes() as arguments when it's called
+    - Function Body Goal: Check if input word (referred to as needle placeholder parameter inside of the function) 
+                          is included in input array of words (referred to as haystack with wordsFind being an example)
+                          and if yes count how often it's there
+    - Output (desired return): Return how often word is included in array as a number
+
+
+  B) Approach:
+    - Define changeable counter variable with initial value of 0
+    - use includes to check if input word is included as element in input array
+    - if yes go through array one element at a time (for loop) and increase counter by one if
+      current element equals input word
+    - return counter variable
+   */
 const wordsCount = [
   "machine",
   "matter",
@@ -352,8 +376,18 @@ const wordsCount = [
 ];
 
 function howManyTimes(haystack, needle) {
-  // TODO:
+  // TODO:return counter variable value of times needle is included in haystack
+  let counter = 0;
+  if (haystack.includes(needle)) {
+    for (let i = 0; i < haystack.length; i++) {
+      if (haystack[i] === needle) {
+        counter++;
+      }
+    }
+  }
+  return counter;
 }
+//console.log(howManyTimes(wordsCount, "matter"));
 
 /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>   Bonus  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  Bonus 1 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
