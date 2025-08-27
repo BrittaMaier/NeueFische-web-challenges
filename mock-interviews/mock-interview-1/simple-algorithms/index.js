@@ -119,13 +119,23 @@ function uniquifyArray(words) {
   /*
   - Create changeable variable uniqueArray initially referring to an empty array
   - Go through input array one element at a time
-  - Update uniqueArray by adding current element to uniqueArray using append property of uniqueArray if it's not included in it
+  - Update uniqueArray by adding current element to uniqueArray using push method of uniqueArray if it's not included in it
     already (for this check if elements in uniqueArray equal current element)(could be include property but I am not sure, so I try by adding another loop first)
   - return unique array after loop ended
    */
   let uniqueArray = [];
-  for (let i = 0; i < words.length; i++) {}
+  if (words.length === 0) {
+    console.log("Input array is empty!");
+    return null;
+  }
+  for (let i = 0; i < words.length; i++) {
+    if (!uniqueArray.includes(words[i])) {
+      uniqueArray.push(words[i]);
+    }
+  }
+  return uniqueArray;
 }
+//console.log(uniquifyArray(words3));
 
 // Find elements
 const wordsFind = [
