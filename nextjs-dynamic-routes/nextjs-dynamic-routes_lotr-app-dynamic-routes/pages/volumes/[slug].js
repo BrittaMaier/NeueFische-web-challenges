@@ -12,6 +12,9 @@ export default function VolumeDetail() {
   }
 
   let volumeIndex = volumes.findIndex((volume) => volume.slug === slug);
+  if (volumeIndex === -1) {
+    return <h1>Page not found</h1>;
+  }
   let volume = volumes[volumeIndex];
 
   let nextIndex = volumes.length - 1 === volumeIndex ? 0 : volumeIndex + 1;

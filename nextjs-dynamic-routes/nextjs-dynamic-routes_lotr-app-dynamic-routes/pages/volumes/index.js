@@ -1,7 +1,27 @@
 import Link from "next/link";
-import { introduction } from "../../lib/data";
+import { introduction, volumes } from "../../lib/data";
+import { useRouter } from "next/router";
 
 export default function Volumes() {
+  /*ToDo:
+  - create button to navigate to random page
+  - render a button 
+  - handle the onClick event on the button
+  - onClick we want to navigate to a random page
+  - on the onClick generate a url to a random volume
+  - grab random volume*/
+  const router = useRouter();
+
+  function getRandomElement(array) {
+    return array[Math.floor(Math.random() * array.length)];
+  }
+
+  function handleRandom() {
+    const randomVolume = getRandomElement(volumes);
+    const newUrl = `/volumes/${randomVolume.slug}`;
+    router.push(newUrl);
+    console.log("random Volume:", randomVolume);
+  }
   return (
     <>
       <h1>The Lord of the Rings</h1>
@@ -21,6 +41,9 @@ export default function Volumes() {
           </Link>
         </li>
       </ul>
+      <button type="button" onClick={handleRandom}>
+        Go to random volume
+      </button>
     </>
   );
 }
