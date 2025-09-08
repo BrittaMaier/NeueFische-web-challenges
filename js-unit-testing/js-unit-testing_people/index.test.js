@@ -105,7 +105,7 @@ test("getPeopleByLastName() returns an array of people of a certain lastName", (
 });
 
 // Hint: use Array.prototype.find for the implementation
-/*test("findPersonById() returns the full object of a person", () => {
+test("findPersonById() returns the full object of a person", () => {
   const result = findPersonById(people, 5);
   expect(result).toEqual({
     id: 5,
@@ -116,7 +116,7 @@ test("getPeopleByLastName() returns an array of people of a certain lastName", (
 });
 
 // Hint: implementation should use Array.prototype.some
-test("isAnyoneOlderThan() returns true if any person is older than the given age", () => {
+/*test("isAnyoneOlderThan() returns true if any person is older than the given age", () => {
   const result = isAnyoneOlderThan(people, 23);
   expect(result).toEqual(true);
 });
