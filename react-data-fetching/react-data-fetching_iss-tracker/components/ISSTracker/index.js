@@ -5,7 +5,7 @@ import Map from "../Map/index";
 const URL = "https://api.wheretheiss.at/v1/satellites/25544";
 
 export default function ISSTracker() {
-  const [coords, setCoords] = useState({
+  /* const [coords, setCoords] = useState({
     longitude: 0,
     latitude: 0,
   });
@@ -30,7 +30,7 @@ export default function ISSTracker() {
     return () => {
       clearInterval(timer);
     };
-  }, []);
+  }, []);*/
 
   return (
     <main>
@@ -38,7 +38,7 @@ export default function ISSTracker() {
       <Controls
         longitude={coords.longitude}
         latitude={coords.latitude}
-        onRefresh={getISSCoords}
+        /*onRefresh={getISSCoords}*/
       />
     </main>
   );
