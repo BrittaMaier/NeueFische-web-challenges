@@ -33,7 +33,7 @@ export default function ISSTracker() {
     };
   }, []);*/
 
-  const { data, error, isLoading } = useSWR(URL);
+  const { data, error, isLoading, mutate } = useSWR(URL);
   console.log("Data", data);
   if (!data) {
     return <h1>Loading...</h1>;
@@ -48,7 +48,7 @@ export default function ISSTracker() {
       <Controls
         longitude={data.longitude}
         latitude={data.latitude}
-        /*onRefresh={getISSCoords}*/
+        onRefresh={() => mutate()}
       />
     </main>
   );
