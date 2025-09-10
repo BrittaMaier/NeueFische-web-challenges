@@ -1,10 +1,10 @@
 import { LightButton, Icon, Text, Name, State } from "./Light.styled";
 
-export default function Light({ light, toggleLights }) {
+export default function Light({ light, onToggleLights }) {
   return (
     <LightButton
       type="button"
-      onClick={() => toggleLights(light.id)}
+      onClick={() => onToggleLights(light.id)}
       $isOn={light.isOn}
     >
       <Icon $isOn={light.isOn}>💡</Icon>
