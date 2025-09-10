@@ -22,10 +22,24 @@ export default function App({ Component, pageProps }) {
       )
     );
   }
+  function handleTurnOff() {
+    /*go through lights array and set all isOn values to false*/
+    setLights(lights.map((light) => ({ ...light, isOn: false })));
+  }
+  function handleTurnOn() {
+    /*go through lights array and set all isOn values to true*/
+    setLights(lights.map((light) => ({ ...light, isOn: true })));
+  }
   return (
     <Layout>
       <GlobalStyle />
-      <Component {...pageProps} lights={lights} onToggleLights={handleToggle} />
+      <Component
+        {...pageProps}
+        lights={lights}
+        onToggleLights={handleToggle}
+        onTurnOff={handleTurnOff}
+        onTurnOn={handleTurnOn}
+      />
     </Layout>
   );
 }
