@@ -30,6 +30,9 @@ export default function App({ Component, pageProps }) {
     /*go through lights array and set all isOn values to true*/
     setLights(lights.map((light) => ({ ...light, isOn: true })));
   }
+  function handleQuickActions(switchingValue) {
+    setLights(lights.map((light) => ({ ...light, isOn: switchingValue })));
+  }
   return (
     <Layout>
       <GlobalStyle />
@@ -37,8 +40,9 @@ export default function App({ Component, pageProps }) {
         {...pageProps}
         lights={lights}
         onToggleLights={handleToggle}
-        onTurnOff={handleTurnOff}
-        onTurnOn={handleTurnOn}
+        //onTurnOff={handleTurnOff}
+        //onTurnOn={handleTurnOn}
+        onQuickActions={handleQuickActions}
       />
     </Layout>
   );
