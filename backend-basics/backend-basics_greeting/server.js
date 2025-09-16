@@ -1,3 +1,11 @@
 import { createServer } from "node:http";
 
-// export const server = …
+export const server = createServer((req, res) => {
+  if (req.url === "/") {
+    res.statusCode = 200;
+    res.end("Hello, Esraa!");
+  } else {
+    res.statusCode = 404;
+    res.end("Not found");
+  }
+});
