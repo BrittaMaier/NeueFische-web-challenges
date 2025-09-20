@@ -19,18 +19,13 @@ export default function Product() {
   if (!data) {
     return;
   }
-  async function handleEditProduct(event) {
-    event.preventDefault();
-
-    const formData = new FormData(event.target);
-    const productData = Object.fromEntries(formData);
-
+  async function handleEditProduct(product) {
     const response = await fetch(`/api/products/${id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringigy(productData),
+      body: JSON.stringify(product),
     });
     if (response.ok) {
       console.log(response.json());
@@ -69,13 +64,7 @@ export default function Product() {
           ❌
         </span>
       </button>
-      {showEditForm && (
-        <ProductForm
-          onSubmit={handleEditProduct}
-          value={data.joke}
-          isEditMode={true}
-        />
-      )}
+      {showEditForm && <ProductForm onSubmit={handleEditProduct} />}
       <StyledLink href="/">Back to all</StyledLink>
     </ProductCard>
   );
